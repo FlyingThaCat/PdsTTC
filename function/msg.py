@@ -9,11 +9,8 @@ def quote():
     f = codecs.open('data/quotedata.json', 'r', 'utf-8-sig') # Opening JSON file
     data = json.load(f)                                      # Returns JSON object as a dictionary
     length = len(data) - 1                                   # Get how many data in JSON
-    # Generate random number whithin range of how many data in JSON
-    #rand = randint(0, length)
-    #quote = data[rand]                                       
-    # Get random quote based in random number
-    qindex = data[randint(0, length)]                         
+    rand = randint(0, length)                                # Generate random number whithin range of how many data in JSON
+    qindex = data[rand]                                      # Get random quote based in random number
 
     # Extract text and author from the quote
     extext = qindex.get('text')
