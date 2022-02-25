@@ -1,7 +1,6 @@
 from function.button import *   # Import All button module
 
 def setcross(h, v, d): # Create new Function
-    global b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16
     #Checking value and set cross line
     if h == 1:
         b1.set("-") 
