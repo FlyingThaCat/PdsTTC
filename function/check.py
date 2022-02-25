@@ -6,14 +6,14 @@ from function.cross import cross
 
 def wincheck():
     print(start.COUNT) # Debug for Count Tracker
-    """
-    |-----------|
-    |1 |2 |3 |4 |
-    |5 |6 |7 |8 |
-    |9 |10|11|12|
-    |13|14|15|16|
-    |-----------|
-    """
+    ###
+    #|-----------|
+    #|1 |2 |3 |4 |
+    #|5 |6 |7 |8 |
+    #|9 |10|11|12|
+    #|13|14|15|16|
+    #|-----------|
+    ###
 
     if(
         # Check the value of button with horizontal, vertical, diagonal possibility for player 1
