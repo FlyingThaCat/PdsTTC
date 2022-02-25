@@ -13,11 +13,11 @@ def quote():
     #rand = randint(0, length)
     #quote = data[rand]                                       
     # Get random quote based in random number
-    quote = data[randint(0, length)]                         
+    qindex = data[randint(0, length)]                         
 
     # Extract text and author from the quote
-    extext = quote.get('text')
-    exauthor = quote.get('from')
+    extext = qindex.get('text')
+    exauthor = qindex.get('from')
 
     msgbox.showinfo("QUOTE OF THE DAY", extext +"\n"+"\n" + exauthor) # Spawn the quote to Tkinter MessageBox With Following format
     f.close()                                                         # Closing file
