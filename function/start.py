@@ -124,12 +124,12 @@ def start():
     
     # Row AND Column Configuration
     ## EX : top left button is 0,0
-    """
-    0 1 2 3
-    1
-    2
-    3
-    """
+    ###
+    #0 1 2 3
+    #1
+    #2
+    #3
+    ###
     # Create button with Initiater and config and call push command to mark progress and set disabled color button as config
     ## s1 = Button(root, height = HEIGHT, width = WIDTH, font = FONT, relief = RELIEF, bg = BGCOLOR, textvariable = b1, command = lambda: push(1), disabledforeground = DISABLEDFGCOLOR)
 
