@@ -2,6 +2,7 @@ from function.button import * # Import Button from tkinter
 
 # Setting button to clear string
 def clear():
+    global b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16
     b1.set("")   
     b2.set("")
     b3.set("")

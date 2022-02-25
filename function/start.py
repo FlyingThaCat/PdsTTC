@@ -11,7 +11,8 @@ CLICK = True
 COUNT = 0
 
 # Start Function
-def start():  
+def start():
+    global b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16
     # Row AND Column Configuration
     ## EX : top left button is 0,0
     """
@@ -62,7 +63,7 @@ def start():
     # Function to mark progress
     def push(n):
             global CLICK, COUNT # Set click and count value as global
-            if CLICK == True:
+            if CLICK is True:
                 if n == 1:                  # If BTN N is clicked do
                     b1.set("1")             # Set value of button to 1
                     s1['state'] = DISABLED  # Set button to be 1 time clicked only
