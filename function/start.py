@@ -1,6 +1,6 @@
 from tkinter import Button, DISABLED                                                    # Import Tkinter Module To Make Button and Disabled Button
 from function.init import root                                                          # Import Tkinter Initiater
-from function.button import *                                                           # Import All button module
+from function.button import b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16                                                           # Import All button module
 import function.check as check                                                          # Import Check module
 from config import DISABLEDFGCOLOR, HEIGHT, WIDTH, FONT, RELIEF, BGCOLOR, PADX, PADY    # Import configuration from config.py
 
