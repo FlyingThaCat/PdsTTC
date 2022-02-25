@@ -2,7 +2,7 @@ from function.clear import clear            # Import Clear Function
 from function.msg import win_msg, tie_msg   # Import Message Function
 import function.start as start              # Import Start Function
 from function.button import b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16 # Import All button module
-from function.cross import *
+from function.cross import cross
 
 def wincheck():
     print(start.COUNT) # Debug for Count Tracker
