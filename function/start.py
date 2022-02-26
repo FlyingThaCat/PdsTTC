@@ -68,6 +68,7 @@ def start():
             COUNT += 1         # Add Count as button pressed to find progress limit
             CLICK = False      # Set to false so player 2 / 0 can play the game
             check.wincheck()   # Calling Wincheck Function
+            
         else: # If Click is False
             if n == 1:                  # If BTN N is clicked do
                 b1.set("0")             # Set value of button to 1
