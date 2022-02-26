@@ -12,6 +12,116 @@ COUNT = 0
 
 # Start Function
 def start():
+
+    # Function to mark progress
+    def push(n):
+        global CLICK, COUNT # Set click and count value as global
+        if CLICK is True:
+            if n == 1:                  # If BTN N is clicked do
+                b1.set("1")             # Set value of button to 1
+                s1['state'] = DISABLED  # Set button to be 1 time clicked only
+            elif n == 2:
+                b2.set("1")
+                s2['state'] = DISABLED
+            elif n == 3:
+                b3.set("1")
+                s3['state'] = DISABLED
+            elif n == 4:
+                b4.set("1")
+                s4['state'] = DISABLED
+            elif n == 5:
+                b5.set("1")
+                s5['state'] = DISABLED
+            elif n == 6:
+                b6.set("1")
+                s6['state'] = DISABLED
+            elif n == 7:
+                b7.set("1")
+                s7['state'] = DISABLED
+            elif n == 8:
+                b8.set("1")
+                s8['state'] = DISABLED
+            elif n == 9:
+                b9.set("1")
+                s9['state'] = DISABLED
+            elif n == 10:
+                b10.set("1")
+                s10['state'] = DISABLED
+            elif n == 11:
+                b11.set("1")
+                s11['state'] = DISABLED
+            elif n == 12:
+                b12.set("1")
+                s12['state'] = DISABLED
+            elif n == 13:
+                b13.set("1")
+                s13['state'] = DISABLED
+            elif n == 14:
+                b14.set("1")
+                s14['state'] = DISABLED
+            elif n == 15:
+                b15.set("1")
+                s15['state'] = DISABLED
+            elif n == 16:
+                b16.set("1")
+                s16['state'] = DISABLED
+            COUNT += 1         # Add Count as button pressed to find progress limit
+            CLICK = False      # Set to false so player 2 / 0 can play the game
+            check.wincheck()   # Calling Wincheck Function
+        else: # If Click is False
+            if n == 1:                  # If BTN N is clicked do
+                b1.set("0")             # Set value of button to 1
+                s1['state'] = DISABLED  # Set button to be 1 time clicked only
+            elif n == 2:
+                b2.set("0")
+                s2['state'] = DISABLED
+            elif n == 3:
+                b3.set("0")
+                s3['state'] = DISABLED
+            elif n == 4:
+                b4.set("0")
+                s4['state'] = DISABLED
+            elif n == 5:
+                b5.set("0")
+                s5['state'] = DISABLED
+            elif n == 6:
+                b6.set("0")
+                s6['state'] = DISABLED
+            elif n == 7:
+                b7.set("0")
+                s7['state'] = DISABLED
+            elif n == 8:
+                b8.set("0")
+                s8['state'] = DISABLED
+            elif n == 9:
+                b9.set("0")
+                s9['state'] = DISABLED
+            elif n == 10:
+                b10.set("0")
+                s10['state'] = DISABLED
+            elif n == 11:
+                b11.set("0")
+                s11['state'] = DISABLED
+            elif n == 12:
+                b12.set("0")
+                s12['state'] = DISABLED
+            elif n == 13:
+                b13.set("0")
+                s13['state'] = DISABLED
+            elif n == 14:
+                b14.set("0")
+                s14['state'] = DISABLED
+            elif n == 15:
+                b15.set("0")
+                s15['state'] = DISABLED
+            elif n == 16:
+                b16.set("0")
+                s16['state'] = DISABLED
+            COUNT += 1         # Add Count as button pressed to find progress limit
+            CLICK = True       # Set to false so player 1 / 1 can continue the flow
+            check.wincheck()   # Calling Wincheck Function
+
+
     # Row AND Column Configuration
     ## EX : top left button is 0,0
     ###
@@ -58,112 +168,3 @@ def start():
     s15.grid(row = 3, column = 2, padx = PADX, pady = PADY)
     s16 = Button(root, height = HEIGHT, width = WIDTH, font = FONT, relief = RELIEF, bg = BGCOLOR, textvariable = b16, command = lambda: push(16), disabledforeground = DISABLEDFGCOLOR)
     s16.grid(row = 3, column = 3, padx = PADX, pady = PADY)
-
-    # Function to mark progress
-    def push(n):
-            global CLICK, COUNT # Set click and count value as global
-            if CLICK is True:
-                if n == 1:                  # If BTN N is clicked do
-                    b1.set("1")             # Set value of button to 1
-                    s1['state'] = DISABLED  # Set button to be 1 time clicked only
-                elif n == 2:
-                    b2.set("1")
-                    s2['state'] = DISABLED
-                elif n == 3:
-                    b3.set("1")
-                    s3['state'] = DISABLED
-                elif n == 4:
-                    b4.set("1")
-                    s4['state'] = DISABLED
-                elif n == 5:
-                    b5.set("1")
-                    s5['state'] = DISABLED
-                elif n == 6:
-                    b6.set("1")
-                    s6['state'] = DISABLED
-                elif n == 7:
-                    b7.set("1")
-                    s7['state'] = DISABLED
-                elif n == 8:
-                    b8.set("1")
-                    s8['state'] = DISABLED
-                elif n == 9:
-                    b9.set("1")
-                    s9['state'] = DISABLED
-                elif n == 10:
-                    b10.set("1")
-                    s10['state'] = DISABLED
-                elif n == 11:
-                    b11.set("1")
-                    s11['state'] = DISABLED
-                elif n == 12:
-                    b12.set("1")
-                    s12['state'] = DISABLED
-                elif n == 13:
-                    b13.set("1")
-                    s13['state'] = DISABLED
-                elif n == 14:
-                    b14.set("1")
-                    s14['state'] = DISABLED
-                elif n == 15:
-                    b15.set("1")
-                    s15['state'] = DISABLED
-                elif n == 16:
-                    b16.set("1")
-                    s16['state'] = DISABLED
-                COUNT += 1         # Add Count as button pressed to find progress limit
-                CLICK = False      # Set to false so player 2 / 0 can play the game
-                check.wincheck()   # Calling Wincheck Function
-
-            else: # If Click is False
-                if n == 1:                  # If BTN N is clicked do
-                    b1.set("0")             # Set value of button to 1
-                    s1['state'] = DISABLED  # Set button to be 1 time clicked only
-                elif n == 2:
-                    b2.set("0")
-                    s2['state'] = DISABLED
-                elif n == 3:
-                    b3.set("0")
-                    s3['state'] = DISABLED
-                elif n == 4:
-                    b4.set("0")
-                    s4['state'] = DISABLED
-                elif n == 5:
-                    b5.set("0")
-                    s5['state'] = DISABLED
-                elif n == 6:
-                    b6.set("0")
-                    s6['state'] = DISABLED
-                elif n == 7:
-                    b7.set("0")
-                    s7['state'] = DISABLED
-                elif n == 8:
-                    b8.set("0")
-                    s8['state'] = DISABLED
-                elif n == 9:
-                    b9.set("0")
-                    s9['state'] = DISABLED
-                elif n == 10:
-                    b10.set("0")
-                    s10['state'] = DISABLED
-                elif n == 11:
-                    b11.set("0")
-                    s11['state'] = DISABLED
-                elif n == 12:
-                    b12.set("0")
-                    s12['state'] = DISABLED
-                elif n == 13:
-                    b13.set("0")
-                    s13['state'] = DISABLED
-                elif n == 14:
-                    b14.set("0")
-                    s14['state'] = DISABLED
-                elif n == 15:
-                    b15.set("0")
-                    s15['state'] = DISABLED
-                elif n == 16:
-                    b16.set("0")
-                    s16['state'] = DISABLED
-                COUNT += 1         # Add Count as button pressed to find progress limit
-                CLICK = True       # Set to false so player 1 / 1 can continue the flow
-                check.wincheck()   # Calling Wincheck Function
