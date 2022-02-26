@@ -1,6 +1,3 @@
-from calendar import c
-from doctest import FAIL_FAST
-from pydoc import cli
 from tkinter import Button, DISABLED                                                    # Import Tkinter Module To Make Button and Disabled Button
 from function.init import root                                                          # Import Tkinter Initiater
 from function.button import b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16      # Import All button module
@@ -113,10 +110,9 @@ def start():
                 elif n == 16:
                     b16.set("1")
                     s16['state'] = DISABLED
-                #CLICK = False      # Set to false so player 2 / 0 can play the game
-                save()
-                #COUNT += 1         # Add Count as button pressed to find progress limit
-                #check.wincheck()   # Calling Wincheck Function
+                CLICK = False      # Set to false so player 2 / 0 can play the game
+                COUNT += 1         # Add Count as button pressed to find progress limit
+                check.wincheck()   # Calling Wincheck Function
 
             else: # If Click is False
                 if n == 1:                  # If BTN N is clicked do
@@ -167,7 +163,6 @@ def start():
                 elif n == 16:
                     b16.set("0")
                     s16['state'] = DISABLED
-                #CLICK = True       # Set to false so player 1 / 1 can continue the flow
-                save()
-                #COUNT += 1         # Add Count as button pressed to find progress limit
-                #check.wincheck()   # Calling Wincheck Function
+                CLICK = True       # Set to false so player 1 / 1 can continue the flow
+                COUNT += 1         # Add Count as button pressed to find progress limit
+                check.wincheck()   # Calling Wincheck Function
