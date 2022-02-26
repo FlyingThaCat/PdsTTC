@@ -6,6 +6,7 @@ from config import DISABLEDFGCOLOR, HEIGHT, WIDTH, FONT, RELIEF, BGCOLOR, PADX, 
 
 #If set to true player 1 move first otherwise the player 2 playing first 
 CLICK = True
+
 #Save Progress Of Player
 COUNT = 0
 
@@ -110,8 +111,8 @@ def start():
                 elif n == 16:
                     b16.set("1")
                     s16['state'] = DISABLED
-                CLICK = False      # Set to false so player 2 / 0 can play the game
                 COUNT += 1         # Add Count as button pressed to find progress limit
+                CLICK = False      # Set to false so player 2 / 0 can play the game
                 check.wincheck()   # Calling Wincheck Function
 
             else: # If Click is False
@@ -163,6 +164,6 @@ def start():
                 elif n == 16:
                     b16.set("0")
                     s16['state'] = DISABLED
-                CLICK = True       # Set to false so player 1 / 1 can continue the flow
                 COUNT += 1         # Add Count as button pressed to find progress limit
+                CLICK = True       # Set to false so player 1 / 1 can continue the flow
                 check.wincheck()   # Calling Wincheck Function
